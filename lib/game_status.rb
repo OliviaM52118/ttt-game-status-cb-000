@@ -87,3 +87,17 @@ def won?(board)
     return false
   end
 end
+
+def full?(board)
+  cond1 = 0
+  for i in 9
+    if(board[i-1] == "")
+      cond1 = 1
+    end
+  end
+  if (cond1 == 0)
+    return true
+  else
+    return false
+  end
+end
