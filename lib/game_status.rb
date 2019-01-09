@@ -91,7 +91,7 @@ end
 def full?(board)
   cond1 = 0
   for i in 9
-    if(board[i-1] == "")
+    if(board[i-1] == "" || board[i-1] == " ")
       cond1 = 1
     end
   end
