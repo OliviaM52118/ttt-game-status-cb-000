@@ -90,9 +90,15 @@ end
 
 def full?(board)
   cond1 = 0
-  for i in 9
-    if(board[i-1] == "" || board[i-1] == " ")
+  cond2 = 0
+  count = 0
+  while (cond2 == 0)
+    if(board[count] == "" || board[count] == " ")
       cond1 = 1
+    end
+    count = count + 1
+    if (count >= 9)
+      cond2 = 1
     end
   end
   if (cond1 == 0)
