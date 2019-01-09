@@ -43,7 +43,7 @@ def won?(board)
     end
   elsif(temp3[0] == temp3[1] && temp3[0] == temp3[2]) #bottom row
     if(temp3[0] == char1 || temp3[0] == char2)
-      answer = [6,7,8]
+      answer = WIN_COMBINATIONS[2]
       return answer
     else
       return false
