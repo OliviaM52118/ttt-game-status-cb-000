@@ -146,7 +146,7 @@ def winner(board)
     if (cond1 == true && cond2 == true)
       return nil
     else
-      if (cond3 != false)
+      if (cond3 == false)
         return nil
       else
         if(cond3[0] == "X")
