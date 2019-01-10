@@ -151,7 +151,7 @@ def winner(board)
       else
         if(cond3[0] == "X")
           return "X"
-        else
+        elsif(cond3[0] == "O")
           return "O"
         end
       end
