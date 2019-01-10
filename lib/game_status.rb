@@ -137,3 +137,23 @@ def over?(board)
     return false
   end
 end
+
+def winner?(board)
+  myboard = board
+  cond1 = full?(myboard)
+  cond2 = draw?(myboard)
+  cond3 = won?(myboard)
+    if (cond1 == true && cond2 == true)
+      return nil
+    else
+      if (cond3 != false)
+        return nil
+      else
+        if(cond3[0] == "X")
+          return "X"
+        else
+          return "O"
+        end
+      end
+    end
+end
