@@ -110,7 +110,7 @@ end
 
 def draw?(board)
   myboard = board
-  cond1 = win?(myboard)
+  cond1 = won?(myboard)
   if (cond1 == WIN_COMBINATIONS[0] || cond1 == WIN_COMBINATIONS[6] || cond1 == WIN_COMBINATIONS[7])
     return false
   end
