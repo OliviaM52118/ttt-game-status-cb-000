@@ -151,7 +151,7 @@ def winner(board)
     if (cond3 == false)
         return nil
     else
-        if(cond3[1] == char1)
+        if(cond3[0] == char1)
           return char1
         else
           return char2
