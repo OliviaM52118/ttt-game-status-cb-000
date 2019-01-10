@@ -110,8 +110,12 @@ end
 
 def draw?(board)
   myboard = board
-  cond1 = full?(myboard)
-  if cond1 == true
+  cond1 = win?(myboard)
+  if (cond1 == true)
+    return false
+  end
+  cond2 = full?(myboard)
+  if (cond2 == true)
     return true
   else
     return false
