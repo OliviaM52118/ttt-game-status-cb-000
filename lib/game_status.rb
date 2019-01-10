@@ -147,15 +147,14 @@ def winner(board)
   cond3 = won?(myboard)
     if (cond1 == true && cond2 == true)
       return nil
-    else
-      if (cond3 == false)
+    end
+    if (cond3 == false)
         return nil
-      else
+    else
         if(cond3[0] == char1)
           return char1
         elsif(cond3[0] == char2)
           return char2
         end
-      end
     end
 end
