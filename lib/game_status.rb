@@ -140,6 +140,8 @@ end
 
 def winner(board)
   myboard = board
+  char1 = "X"
+  char2 = "O"
   cond1 = full?(myboard)
   cond2 = draw?(myboard)
   cond3 = won?(myboard)
@@ -149,10 +151,10 @@ def winner(board)
       if (cond3 == false)
         return nil
       else
-        if(cond3[0] == "X")
-          return "X"
-        elsif(cond3[0] == "O")
-          return "O"
+        if(cond3[0] == char1)
+          return char1
+        elsif(cond3[0] == char2)
+          return char2
         end
       end
     end
