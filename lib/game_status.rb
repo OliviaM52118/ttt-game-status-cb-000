@@ -138,7 +138,7 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner(board)
   myboard = board
   cond1 = full?(myboard)
   cond2 = draw?(myboard)
