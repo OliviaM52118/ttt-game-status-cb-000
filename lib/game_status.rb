@@ -27,7 +27,6 @@ def won?(board)
   char1 = "X"
   char2 = "O"
   answer = []
-  myanswer = []
   if(temp1[0] == temp1[1] && temp1[0] == temp1[2]) #top row
     if(temp1[0] == char1 || temp1[0] == char2)
       answer = WIN_COMBINATIONS[0]
@@ -44,8 +43,8 @@ def won?(board)
     end
   elsif(temp3[0] == temp3[1] && temp3[0] == temp3[2]) #bottom row
     if(temp3[0] == char1 || temp3[0] == char2)
-      myanswer = WIN_COMBINATIONS[2]
-      return myanswer
+      answer = WIN_COMBINATIONS[2]
+      return answer
     else
       return false
     end
@@ -65,8 +64,8 @@ def won?(board)
     end
   elsif(temp6[0] == temp6[1] && temp6[0] == temp6[2]) #right column
     if(temp6[0] == char1 || temp6[0] == char2)
-      myanswer = WIN_COMBINATIONS[5]
-      return myanswer
+      answer = WIN_COMBINATIONS[5]
+      return answer
     else
       return false
     end
