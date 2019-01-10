@@ -107,3 +107,13 @@ def full?(board)
     return false
   end
 end
+
+def draw?(board)
+  myboard = board
+  cond1 = full?(myboard)
+  if cond1 == true
+    return true
+  else
+    return false
+  end
+end
