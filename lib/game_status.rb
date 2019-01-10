@@ -153,7 +153,7 @@ def winner(board)
     else
         if(cond3[0] == char1)
           return char1
-        elsif(cond3[0] == char2)
+        else
           return char2
         end
     end
