@@ -129,9 +129,9 @@ def over?(board)
   cond3 = full?(myboard)
   if(cond2 == true)
     return true
-  elsif(cond1 == true && cond3 == true)
+  elsif(cond1 != false && cond3 == true)
     return true
-  elsif(cond1 == true && cond3 == false)
+  elsif(cond1 != false && cond3 == false)
     return true
   else
     return false
