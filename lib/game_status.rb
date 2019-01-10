@@ -121,3 +121,19 @@ def draw?(board)
     return false
   end
 end
+
+def over?(board)
+  myboard = board
+  cond1 = won?(myboard)
+  cond2 = draw?(myboard)
+  cond3 = full?(myboard)
+  if(cond2 == true)
+    return true
+  elsif(cond1 == true && cond3 == true)
+    return true
+  elsif(cond1 == true && cond3 == false)
+    return true
+  else
+    return false
+  end
+end
